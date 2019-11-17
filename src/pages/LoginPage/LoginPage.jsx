@@ -1,29 +1,29 @@
-import React from "react";
+import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
-import People from "@material-ui/icons/People";
 import LockOutlined from "@material-ui/icons/LockOutlined";
-// React icons
-import {FaFacebook, FaTwitter, FaGooglePlusG } from 'react-icons/fa';
-// core components
-import Header from "components/Header/Header.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import People from "@material-ui/icons/People";
+import image from "assets/img/bg7.jpg";
+import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
+import Card from "components/Card/Card.jsx";
+import CardBody from "components/Card/CardBody.jsx";
+import CardFooter from "components/Card/CardFooter.jsx";
+import CardHeader from "components/Card/CardHeader.jsx";
+import Button from "components/CustomButtons/Button.jsx";
+import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
+// core components
+import Header from "components/Header/Header.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import React from "react";
+// React icons
+import { FaFacebook, FaGooglePlusG, FaTwitter } from 'react-icons/fa';
 
-import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
-import image from "assets/img/bg7.jpg";
 
 class LoginPage extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class LoginPage extends React.Component {
   componentDidMount() {
     // we add a hidden class to the card and after 700 ms we delete it and the transition appears
     setTimeout(
-      function() {
+      function () {
         this.setState({ cardAnimaton: "" });
       }.bind(this),
       700
@@ -49,7 +49,6 @@ class LoginPage extends React.Component {
         <Header
           absolute
           color="transparent"
-          brand="Material Kit React"
           rightLinks={<HeaderLinks />}
           {...rest}
         />
@@ -76,7 +75,7 @@ class LoginPage extends React.Component {
                           color="transparent"
                           onClick={e => e.preventDefault()}
                         >
-                          <FaTwitter/>
+                          <FaTwitter />
                         </Button>
                         <Button
                           justIcon
@@ -85,7 +84,7 @@ class LoginPage extends React.Component {
                           color="transparent"
                           onClick={e => e.preventDefault()}
                         >
-                          <FaFacebook/>
+                          <FaFacebook />
                         </Button>
                         <Button
                           justIcon
@@ -94,7 +93,7 @@ class LoginPage extends React.Component {
                           color="transparent"
                           onClick={e => e.preventDefault()}
                         >
-                          <FaGooglePlusG/>
+                          <FaGooglePlusG />
                         </Button>
                       </div>
                     </CardHeader>
@@ -140,7 +139,7 @@ class LoginPage extends React.Component {
                           type: "password",
                           endAdornment: (
                             <InputAdornment position="end">
-                              <LockOutlined/>
+                              <LockOutlined />
                             </InputAdornment>
                           )
                         }}

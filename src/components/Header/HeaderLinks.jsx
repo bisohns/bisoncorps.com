@@ -1,25 +1,21 @@
 /*eslint-disable*/
-import React from "react";
-// react components for routing our app without refresh
-import { Link } from "gatsby";
-
-// @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+// @material-ui/core components
+import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
-
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
-
-// React icons
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
-
+import { Apps } from "@material-ui/icons";
+import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+// react components for routing our app without refresh
+import { Link } from "gatsby";
+import React from "react";
+// React icons
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
@@ -49,35 +45,30 @@ function HeaderLinks({ ...props }) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
+        <Link to="/about" className={classes.navLink}>
+          About
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
+          id="github-id"
+          title="Checkout out GitHub repos"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim"
+            href="https://github.com/bisoncorps"
             target="_blank"
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter/>
+            <FaGithub />
           </Button>
         </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-facebook"
+          id="Linkedin-Link"
           title="Follow us on facebook"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
@@ -88,24 +79,7 @@ function HeaderLinks({ ...props }) {
             target="_blank"
             className={classes.navLink}
           >
-            <FaFacebook/>
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <FaInstagram/>
+            <FaLinkedin />
           </Button>
         </Tooltip>
       </ListItem>

@@ -1,17 +1,17 @@
-import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
 // @material-ui/icons
 import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
 import Fingerprint from "@material-ui/icons/Fingerprint";
+import VerifiedUser from "@material-ui/icons/VerifiedUser";
+import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
+import React from "react";
 
-import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
+
 
 class ProductSection extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Let's talk product</h2>
+            <h2 className={classes.title}>We create Product</h2>
             <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful
@@ -34,8 +34,8 @@ class ProductSection extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Free Chat"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="Artificial Intelligence"
+                description="We apply Cutting Edge Technologies in Machine Learning to suit your very need"
                 icon={Chat}
                 iconColor="info"
                 vertical
@@ -43,8 +43,8 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Verified Users"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="Web Development"
+                description="With Technologies like React, Django and Golang, we build web applications which scale"
                 icon={VerifiedUser}
                 iconColor="success"
                 vertical
@@ -52,8 +52,8 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Fingerprint"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                title="Mobile Development"
+                description="Using React-Native, we create cross-platform mobile applications"
                 icon={Fingerprint}
                 iconColor="danger"
                 vertical
