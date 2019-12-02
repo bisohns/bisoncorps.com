@@ -3,14 +3,13 @@ import withStyles from "@material-ui/core/styles/withStyles"
 import landing from "assets/img/landing.jpg"
 import profile from "assets/img/profile.jpg"
 import exampleStyle from "assets/jss/material-kit-react/views/componentsSections/exampleStyle"
-import { Button } from "components/CustomButtons"
+import Button from "components/CustomButtons"
 // @material-ui/icons
 // core components
 import { GridContainer, GridItem } from "components/Grid"
 // react components for routing our app without refresh
 import { Link } from "gatsby"
 import React from "react"
-
 
 class SectionExamples extends React.Component {
   render() {

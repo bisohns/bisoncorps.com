@@ -1,66 +1,84 @@
-/*eslint-disable*/
-import { List, ListItem, withStyles } from "@material-ui/core";
-// @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-import footerStyle from "assets/jss/material-kit-react/components/footerStyle";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-import { Link } from "gatsby";
 // nodejs library to set properties for components
-import PropTypes from "prop-types";
-import React from "react";
-
-
+import React from "react"
+import PropTypes from "prop-types"
+import { List, ListItem, withStyles } from "@material-ui/core"
+import { StaticQuery, graphql, Link } from "gatsby"
+// nodejs library that concatenates classes
+import classNames from "classnames"
+// @material-ui/icons
+import Favorite from "@material-ui/icons/Favorite"
+import { FaGithub } from "react-icons/fa"
+import footerStyle from "assets/jss/material-kit-react/components/footerStyle"
+import Button from "components/CustomButtons"
 
 function Footer({ ...props }) {
-  const { classes, whiteFont } = props;
+  const { classes, whiteFont } = props
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
+    [classes.footerWhiteFont]: whiteFont,
+  })
   const aClasses = classNames({
     [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
-  });
+    [classes.footerWhiteFont]: whiteFont,
+  })
   return (
-    <footer className={footerClasses}>
-      <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.bisoncorps.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Bisoncorps
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <Link to="/about" className={classes.block}>
-                About us
-              </Link>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <Link to="/works" className={classes.block}>
-                Our Works
-              </Link>
-            </ListItem>
-          </List>
-        </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          Bisoncorps
-        </div>
-      </div>
-    </footer>
-  );
+    <StaticQuery
+      query={graphql`
+        query FooterQuery {
+          site {
+            siteMetadata {
+              siteUrl
+              github
+            }
+          }
+        }
+      `}
+      render={data => (
+        <footer className={footerClasses}>
+          <div className={classes.container}>
+            <div className={classes.left}>
+              <List className={classes.list}>
+                <ListItem className={classes.inlineBlock}>
+                  <a
+                    href={data.site.siteMetadata.siteUrl}
+                    className={classes.block}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Bisoncorps
+                  </a>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
+                  <Link to="/works" className={classes.block}>
+                    Our Works
+                  </Link>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
+                  <Button
+                    href={data.site.siteMetadata.github}
+                    target="_blank"
+                    color="transparent"
+                    className={classes.navLink}
+                  >
+                    <FaGithub />
+                  </Button>
+                </ListItem>
+              </List>
+            </div>
+            <div className={classes.right}>
+              &copy; {1900 + new Date().getYear()} , made with{" "}
+              <Favorite className={classes.icon} /> by Bisoncorps
+            </div>
+          </div>
+        </footer>
+      )}
+    />
+  )
 }
 
 Footer.propTypes = {
   classes: PropTypes.object.isRequired,
-  whiteFont: PropTypes.bool
-};
+  whiteFont: PropTypes.bool,
+}
 
-export default withStyles(footerStyle)(Footer);
+export default withStyles(footerStyle)(Footer)

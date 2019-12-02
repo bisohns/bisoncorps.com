@@ -19,7 +19,7 @@ import profilePageStyle from "assets/jss/material-kit-react/views/profilePage"
 // nodejs library that concatenates classes
 import classNames from "classnames"
 import Button from "components/CustomButtons"
-import {GridItem, GridContainer} from "components/Grid"
+import { GridItem, GridContainer } from "components/Grid"
 import Layout from "components/Layout"
 import NavPills from "components/NavPills"
 import Parallax from "components/Parallax"

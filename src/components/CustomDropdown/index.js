@@ -1,3 +1,3 @@
-import CustomDropdown from "./CustomDropdown"
+import CustomDropDown from "./CustomDropdown"
 
 export default CustomDropDown

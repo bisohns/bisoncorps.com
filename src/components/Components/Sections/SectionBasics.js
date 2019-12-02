@@ -24,7 +24,6 @@ import React from "react"
 // React icons
 import { FaUsers } from "react-icons/fa"
 
-
 class SectionBasics extends React.Component {
   constructor(props) {
     super(props)

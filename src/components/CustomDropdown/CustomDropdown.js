@@ -17,7 +17,6 @@ import Button from "components/CustomButtons"
 import PropTypes from "prop-types"
 import React from "react"
 
-
 class CustomDropdown extends React.Component {
   constructor(props) {
     super(props)

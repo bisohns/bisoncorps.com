@@ -42,6 +42,10 @@ const teamStyle = {
   margin5: {
     margin: "5px",
   },
+  bigAvatar: {
+    width: 120,
+    height: 120,
+  },
 }
 
 export default teamStyle
