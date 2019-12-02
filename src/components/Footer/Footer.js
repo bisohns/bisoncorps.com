@@ -17,10 +17,6 @@ function Footer({ ...props }) {
     [classes.footer]: true,
     [classes.footerWhiteFont]: whiteFont,
   })
-  const aClasses = classNames({
-    [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont,
-  })
   return (
     <StaticQuery
       query={graphql`
@@ -39,19 +35,19 @@ function Footer({ ...props }) {
             <div className={classes.left}>
               <List className={classes.list}>
                 <ListItem className={classes.inlineBlock}>
+                  <Link to="/" className={classes.block}>
+                    Bisoncorps
+                  </Link>
+                </ListItem>
+                <ListItem className={classes.inlineBlock}>
                   <a
-                    href={data.site.siteMetadata.siteUrl}
+                    href={data.site.siteMetadata.github}
                     className={classes.block}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Bisoncorps
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <Link to="/works" className={classes.block}>
                     Our Works
-                  </Link>
+                  </a>
                 </ListItem>
                 <ListItem className={classes.inlineBlock}>
                   <Button

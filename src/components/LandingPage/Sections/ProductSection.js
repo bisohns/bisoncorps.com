@@ -1,27 +1,22 @@
+import React from "react"
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles"
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat"
-import Fingerprint from "@material-ui/icons/Fingerprint"
-import VerifiedUser from "@material-ui/icons/VerifiedUser"
+import Language from "@material-ui/icons/Language"
+import EmojiObjectsRoundedIcon from "@material-ui/icons/EmojiObjectsRounded"
+import DeveloperModeOutlinedIcon from "@material-ui/icons/DeveloperModeOutlined"
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle"
 // core components
 import GridContainer from "components/Grid/GridContainer"
 import GridItem from "components/Grid/GridItem"
 import InfoArea from "components/InfoArea/InfoArea"
-import React from "react"
 
 const ProductSection = ({ classes }) => (
   <div className={classes.section}>
     <GridContainer justify="center">
       <GridItem xs={12} sm={12} md={8}>
         <h2 className={classes.title}>We create Product</h2>
-        <h5 className={classes.description}>
-          This is the paragraph where you can write more details about your
-          product. Keep you user engaged by providing meaningful information.
-          Remember that by this time, the user is curious, otherwise he wouldn't
-          scroll to get here. Add a button if you want the user to see more.
-        </h5>
+        <h5 className={classes.description} />
       </GridItem>
     </GridContainer>
     <div>
@@ -30,7 +25,7 @@ const ProductSection = ({ classes }) => (
           <InfoArea
             title="Artificial Intelligence"
             description="We apply Cutting Edge Technologies in Machine Learning to suit your very need"
-            icon={Chat}
+            icon={EmojiObjectsRoundedIcon}
             iconColor="info"
             vertical
           />
@@ -39,7 +34,7 @@ const ProductSection = ({ classes }) => (
           <InfoArea
             title="Web Development"
             description="With Technologies like React, Django and Golang, we build web applications which scale"
-            icon={VerifiedUser}
+            icon={Language}
             iconColor="success"
             vertical
           />
@@ -48,7 +43,7 @@ const ProductSection = ({ classes }) => (
           <InfoArea
             title="Mobile Development"
             description="Using React-Native, we create cross-platform mobile applications"
-            icon={Fingerprint}
+            icon={DeveloperModeOutlinedIcon}
             iconColor="danger"
             vertical
           />

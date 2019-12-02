@@ -9,7 +9,7 @@ module.exports = {
     {
       name: "Diretnan Domnan",
       role: "Python|Machine Learning Engineer",
-      description: "Some random stuffs",
+      bio: "",
       github: "https://github.com/deven96",
       twitter: "https://twitter.com/_deven96",
       linkedin: "https://linkedin.com/in/diretnan-domnan",
@@ -17,7 +17,7 @@ module.exports = {
     {
       name: "Mmadu Manasseh",
       role: "Python|DevOps Enthusiast",
-      description: "Soem Random Stuffs",
+      bio: "",
       github: "https://github.com/mensaah",
       twitter: "https://twitter.com/iamMensaah",
       linkedin: "https://linkedin.com/in/manasseh-mmadu",
@@ -25,7 +25,7 @@ module.exports = {
     {
       name: "Wisdom Praise",
       role: "React|Android Developer",
-      description: "Soem Random Stuffs",
+      bio: "",
       github: "https://github.com/wizzywit",
       twitter: "https://twitter.com/iamMensaah",
       linkedin: "https://linkedin.com/in/manasseh-mmadu",

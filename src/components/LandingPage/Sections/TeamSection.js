@@ -37,7 +37,7 @@ const TeamSection = ({ classes }) => {
               members {
                 name
                 role
-                description
+                bio
                 github
                 twitter
                 linkedin
@@ -83,9 +83,7 @@ const TeamSection = ({ classes }) => {
                       </small>
                     </h4>
                     <CardBody>
-                      <p className={classes.description}>
-                        {member.description}
-                      </p>
+                      <p className={classes.description}>{member.bio}</p>
                     </CardBody>
                     <CardFooter className={classes.justifyCenter}>
                       {member.twitter && (
