@@ -5,29 +5,6 @@ module.exports = {
   linkedin: "https://linkedin.com",
   tagline: "Building Interesting Softwares Opensourced for humaNS",
   about: "Some random about",
-  products: [
-    {
-      title: "Artificial Intelligence",
-      description:
-        "We apply Cutting Edge Technologies in Machine Learning to suit your very need",
-      iconColor: "info",
-      icon: require("@material-ui/icons/Chat"),
-    },
-    {
-      title: "Web Development",
-      description:
-        "With Technologies like React, Django and Golang, we build web applications which scale",
-      iconColor: "success",
-      icon: require("@material-ui/icons/Fingerprint"),
-    },
-    {
-      title: "Mobile Development",
-      description:
-        "Using React-Native, we create cross-platform mobile applications",
-      iconColor: "danger",
-      icon: require("@material-ui/icons/VerifiedUser"),
-    },
-  ],
   members: [
     {
       name: "Diretnan Domnan",

@@ -12,9 +12,14 @@ function HeaderLinks({ classes }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link to="/works" className={classes.navLink}>
+        <a
+          href="https://github.com/bisoncorps"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.navLink}
+        >
           Our Works
-        </Link>
+        </a>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link to="#contact" className={classes.navLink}>
