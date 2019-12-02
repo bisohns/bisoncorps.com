@@ -10,7 +10,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "lint": "eslint src/**/*.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
@@ -31,6 +33,7 @@
     "history": "^4.7.2",
     "node-sass": "^4.11.0",
     "nouislider": "^13.1.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-datetime": "^2.16.3",
     "react-dom": "^16.8.4",
@@ -44,7 +47,11 @@
     "typeface-roboto-slab": "0.0.72"
   },
   "devDependencies": {
-    "npm-check": "^5.9.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.16.4"
   },
   "repository": {

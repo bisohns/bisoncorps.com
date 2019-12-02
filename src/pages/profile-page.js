@@ -1,6 +1,4 @@
-import React from "react";
-import ProfilePage from "./ProfilePage/ProfilePage";
+import React from "react"
+import ProfilePage from "../components/ProfilePage"
 
-export default () => (
-  <ProfilePage/>
-);
+export default () => <ProfilePage />
