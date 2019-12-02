@@ -25,6 +25,7 @@ const LandingPage = ({ classes }) => (
         site {
           siteMetadata {
             tagline
+            github
             about
           }
         }
@@ -41,11 +42,14 @@ const LandingPage = ({ classes }) => (
                 </h1>
                 <h4>{data.site.siteMetadata.about}</h4>
                 <br />
-                <Link to="/works">
-                  <Button color="danger" size="lg" rel="noopener noreferrer">
-                    See Works
-                  </Button>
-                </Link>
+                <Button
+                  href={data.site.siteMetadata.github}
+                  color="danger"
+                  size="lg"
+                  rel="noopener noreferrer"
+                >
+                  See Works
+                </Button>
               </GridItem>
             </GridContainer>
           </div>

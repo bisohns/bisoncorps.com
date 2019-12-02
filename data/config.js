@@ -4,7 +4,8 @@ module.exports = {
   github: "https://github.com/bisoncorps",
   linkedin: "https://linkedin.com",
   tagline: "Building Interesting Softwares Opensourced for humaNS",
-  about: "Some random about",
+  about:
+    "A Group of Tech-Enthusiasts and Opensourcers rubbing minds to create Awesome Softwares",
   members: [
     {
       name: "Diretnan Domnan",

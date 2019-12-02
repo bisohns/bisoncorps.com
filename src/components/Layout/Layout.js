@@ -1,6 +1,9 @@
 import Footer from "components/Footer"
 import Header, { HeaderLinks } from "components/Header"
 import React from "react"
+import "typeface-roboto"
+import "typeface-roboto-slab"
+import "typeface-amita"
 
 const Layout = ({ children, ...rest }) => {
   return (

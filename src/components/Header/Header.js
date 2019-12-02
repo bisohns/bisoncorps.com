@@ -26,13 +26,16 @@ class Header extends React.Component {
     this.headerColorChange = this.headerColorChange.bind(this)
   }
 
-  handleDrawerToggle() {
-    this.setState({ mobileOpen: !this.state.mobileOpen })
-  }
-
   componentDidMount() {
     if (this.props.changeColorOnScroll) {
       window.addEventListener("scroll", this.headerColorChange)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.props.changeColorOnScroll) {
+      typeof window !== "undefined" &&
+        window.removeEventListener("scroll", this.headerColorChange)
     }
   }
 
@@ -56,11 +59,8 @@ class Header extends React.Component {
     }
   }
 
-  componentWillUnmount() {
-    if (this.props.changeColorOnScroll) {
-      typeof window !== "undefined" &&
-        window.removeEventListener("scroll", this.headerColorChange)
-    }
+  handleDrawerToggle() {
+    this.setState({ mobileOpen: !this.state.mobileOpen })
   }
 
   render() {
@@ -80,7 +80,11 @@ class Header extends React.Component {
       [classes.fixed]: fixed,
     })
     const brandComponent = (
-      <Link className={classes.title} to="/">
+      <Link
+        className={classes.title}
+        style={{ fontFamily: "amita", fontSize: 24, textDecoration: "None" }}
+        to="/"
+      >
         {brand || "Bisoncorps"}
       </Link>
     )

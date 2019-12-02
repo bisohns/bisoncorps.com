@@ -11801,6 +11801,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-amita@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-amita/-/typeface-amita-0.0.75.tgz#c22149ec5392a8a5578c0cd836a1ad15612c5cdf"
+  integrity sha512-3zjWDo7mlACaNLh/6yUR5DcIoJbqY+/9S8yDCc3RWmdWgZJAo1EfXU348Wobhr6nAOKF49gFf+9ah9kwkc5zHw==
+
 typeface-roboto-slab@0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-roboto-slab/-/typeface-roboto-slab-0.0.72.tgz#8316b370a7b80af4aab339c957a467ca84b38aa1"
