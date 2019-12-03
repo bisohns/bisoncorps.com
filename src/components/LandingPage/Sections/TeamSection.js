@@ -59,6 +59,7 @@ const TeamSection = ({ classes }) => {
                       sm={12}
                       md={6}
                       className={classes.itemGrid}
+                      justify="center"
                     >
                       {member.avatar ? (
                         <img

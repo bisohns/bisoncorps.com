@@ -43,8 +43,8 @@ const teamStyle = {
     margin: "5px",
   },
   bigAvatar: {
-    width: 120,
-    height: 120,
+    width: "100%",
+    height: 125,
   },
 }
 
