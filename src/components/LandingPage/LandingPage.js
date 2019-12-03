@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 // nodejs library that concatenates classes
 import classNames from "classnames"
 // @material-ui/core components

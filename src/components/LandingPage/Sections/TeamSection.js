@@ -18,10 +18,6 @@ import Card, { CardBody, CardFooter } from "components/Card"
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle"
 
-import team1 from "assets/img/faces/avatar.jpg"
-import team2 from "assets/img/faces/christian.jpg"
-import team3 from "assets/img/faces/kendall.jpg"
-
 const TeamSection = ({ classes }) => {
   const imageClasses = classNames(
     classes.imgRaised,
