@@ -9,14 +9,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-resolve-src",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-offline",
     "gatsby-plugin-sass",
     "gatsby-plugin-material-ui",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
+        name: "Bisoncorps",
+        short_name: "Bisoncorps",
         start_url: "/",
         background_color: "#663399",
         theme_color: "#663399",
