@@ -17,7 +17,7 @@ install:
 
 script:
   - yarn build
-  - cp README.md public/
+  - cp CNAME README.md public/
 
 deploy:
   local_dir: public
